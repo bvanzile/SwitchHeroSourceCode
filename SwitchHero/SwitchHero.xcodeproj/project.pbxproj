@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46518742258D78B000DA57C1 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46518741258D78AF00DA57C1 /* AboutTableViewController.swift */; };
+		465E28C024537AFB00BFFED2 /* ReflectedStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E28BF24537AFB00BFFED2 /* ReflectedStringConvertible.swift */; };
+		465E28C224538B7100BFFED2 /* GamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E28C124538B7100BFFED2 /* GamesTableViewController.swift */; };
+		465E28C424561CD200BFFED2 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E28C324561CD200BFFED2 /* GamesTableViewCell.swift */; };
+		465E28CC245A08CA00BFFED2 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E28CB245A08CA00BFFED2 /* FavoritesTableViewController.swift */; };
+		465E28CE245A19F200BFFED2 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E28CD245A19F200BFFED2 /* GameManager.swift */; };
+		465E28D1245A26A100BFFED2 /* GameDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E28D0245A26A100BFFED2 /* GameDetails.swift */; };
+		465E28D52463560B00BFFED2 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E28D42463560B00BFFED2 /* RoundButton.swift */; };
+		467C77412489847500153C79 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467C77402489847500153C79 /* Date.swift */; };
+		467C7743248AB3E400153C79 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467C7742248AB3E400153C79 /* Array.swift */; };
+		467C774624942BF400153C79 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 467C774524942BF400153C79 /* Alamofire */; };
+		46812DC4244F562A00BB0DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46812DC3244F562A00BB0DA8 /* AppDelegate.swift */; };
+		46812DC6244F562A00BB0DA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46812DC5244F562A00BB0DA8 /* SceneDelegate.swift */; };
+		46812DCD244F562A00BB0DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46812DCB244F562A00BB0DA8 /* Main.storyboard */; };
+		46812DCF244F562E00BB0DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46812DCE244F562E00BB0DA8 /* Assets.xcassets */; };
+		46812DD2244F562E00BB0DA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46812DD0244F562E00BB0DA8 /* LaunchScreen.storyboard */; };
+		46812DDD244F562E00BB0DA8 /* SwitchHeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46812DDC244F562E00BB0DA8 /* SwitchHeroTests.swift */; };
+		46812DE8244F562F00BB0DA8 /* SwitchHeroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46812DE7244F562F00BB0DA8 /* SwitchHeroUITests.swift */; };
+		46812DF8244F5F0C00BB0DA8 /* GameDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46812DF7244F5F0C00BB0DA8 /* GameDetailsViewController.swift */; };
+		46812E002450D04000BB0DA8 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46812DFF2450D04000BB0DA8 /* Game.swift */; };
+		46812E062450D74500BB0DA8 /* DynamoGameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46812E052450D74500BB0DA8 /* DynamoGameData.swift */; };
+		46812E082451FA9100BB0DA8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46812E072451FA9100BB0DA8 /* Config.swift */; };
+		46A2C23624858C40004E7656 /* UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2C23524858C40004E7656 /* UIAlert.swift */; };
+		46A2C23824858C72004E7656 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2C23724858C72004E7656 /* UILabel.swift */; };
+		46A748BD247C5F6100AFA209 /* SystemSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A748BC247C5F6100AFA209 /* SystemSettingsTableViewController.swift */; };
+		46A748C0247ECE0C00AFA209 /* Sheeeeeeeeet in Frameworks */ = {isa = PBXBuildFile; productRef = 46A748BF247ECE0C00AFA209 /* Sheeeeeeeeet */; };
+		46A748C2247EF6DC00AFA209 /* GameFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A748C1247EF6DC00AFA209 /* GameFilters.swift */; };
+		46A7C68B2469E1530025CB00 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7C68A2469E1530025CB00 /* SettingsTableViewController.swift */; };
+		46A7C68E2469F0490025CB00 /* NotificationsSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7C68D2469F0490025CB00 /* NotificationsSettingsTableViewController.swift */; };
+		46A7C690247343E80025CB00 /* GameDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7C68F247343E80025CB00 /* GameDetailsTableViewController.swift */; };
+		46A7C695247863520025CB00 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 46A7C694247863520025CB00 /* Kingfisher */; };
+		46ADA60D24EF072100E4C18C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ADA60C24EF072100E4C18C /* TabBarViewController.swift */; };
+		46ADA61224F59B9A00E4C18C /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ADA61124F59B9A00E4C18C /* FavoritesTableViewCell.swift */; };
+		46ADA61424F702C400E4C18C /* LocalNotificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ADA61324F702C400E4C18C /* LocalNotificationsCell.swift */; };
+		46ADA61824F9AFC100E4C18C /* AppearanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ADA61724F9AFC100E4C18C /* AppearanceTableViewController.swift */; };
+		46C20E2F24C7A19200E329DA /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C20E2E24C7A19200E329DA /* UIImage.swift */; };
+		46F24A8D24E32C5E00979896 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F24A8C24E32C5E00979896 /* LocalNotificationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46812DD9244F562E00BB0DA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46812DB8244F562A00BB0DA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46812DBF244F562A00BB0DA8;
+			remoteInfo = SwitchHero;
+		};
+		46812DE4244F562E00BB0DA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46812DB8244F562A00BB0DA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46812DBF244F562A00BB0DA8;
+			remoteInfo = SwitchHero;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46518741258D78AF00DA57C1 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		465E28BF24537AFB00BFFED2 /* ReflectedStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectedStringConvertible.swift; sourceTree = "<group>"; };
+		465E28C124538B7100BFFED2 /* GamesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewController.swift; sourceTree = "<group>"; };
+		465E28C324561CD200BFFED2 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
+		465E28CB245A08CA00BFFED2 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		465E28CD245A19F200BFFED2 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		465E28D0245A26A100BFFED2 /* GameDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetails.swift; sourceTree = "<group>"; };
+		465E28D42463560B00BFFED2 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		467C77402489847500153C79 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		467C7742248AB3E400153C79 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		46812DC0244F562A00BB0DA8 /* SwitchHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitchHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46812DC3244F562A00BB0DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46812DC5244F562A00BB0DA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		46812DCC244F562A00BB0DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46812DCE244F562E00BB0DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46812DD1244F562E00BB0DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46812DD3244F562E00BB0DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46812DD8244F562E00BB0DA8 /* SwitchHeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchHeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46812DDC244F562E00BB0DA8 /* SwitchHeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchHeroTests.swift; sourceTree = "<group>"; };
+		46812DDE244F562E00BB0DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46812DE3244F562E00BB0DA8 /* SwitchHeroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchHeroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46812DE7244F562F00BB0DA8 /* SwitchHeroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchHeroUITests.swift; sourceTree = "<group>"; };
+		46812DE9244F562F00BB0DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46812DF7244F5F0C00BB0DA8 /* GameDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsViewController.swift; sourceTree = "<group>"; };
+		46812DFF2450D04000BB0DA8 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		46812E052450D74500BB0DA8 /* DynamoGameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamoGameData.swift; sourceTree = "<group>"; };
+		46812E072451FA9100BB0DA8 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		46A2C23524858C40004E7656 /* UIAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlert.swift; sourceTree = "<group>"; };
+		46A2C23724858C72004E7656 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		46A748BC247C5F6100AFA209 /* SystemSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSettingsTableViewController.swift; sourceTree = "<group>"; };
+		46A748C1247EF6DC00AFA209 /* GameFilters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFilters.swift; sourceTree = "<group>"; };
+		46A7C68A2469E1530025CB00 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		46A7C68D2469F0490025CB00 /* NotificationsSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsSettingsTableViewController.swift; sourceTree = "<group>"; };
+		46A7C68F247343E80025CB00 /* GameDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsTableViewController.swift; sourceTree = "<group>"; };
+		46ADA60C24EF072100E4C18C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		46ADA61124F59B9A00E4C18C /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		46ADA61324F702C400E4C18C /* LocalNotificationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsCell.swift; sourceTree = "<group>"; };
+		46ADA61724F9AFC100E4C18C /* AppearanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceTableViewController.swift; sourceTree = "<group>"; };
+		46C20E2E24C7A19200E329DA /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		46F24A8C24E32C5E00979896 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46812DBD244F562A00BB0DA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				467C774624942BF400153C79 /* Alamofire in Frameworks */,
+				46A748C0247ECE0C00AFA209 /* Sheeeeeeeeet in Frameworks */,
+				46A7C695247863520025CB00 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46812DD5244F562E00BB0DA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46812DE0244F562E00BB0DA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4651873D258D6F6500DA57C1 /* About Section */ = {
+			isa = PBXGroup;
+			children = (
+				46518741258D78AF00DA57C1 /* AboutTableViewController.swift */,
+			);
+			path = "About Section";
+			sourceTree = "<group>";
+		};
+		46518746258D79CC00DA57C1 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				46A748BC247C5F6100AFA209 /* SystemSettingsTableViewController.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		465E28CF245A24F700BFFED2 /* JSONStructures */ = {
+			isa = PBXGroup;
+			children = (
+				46812E052450D74500BB0DA8 /* DynamoGameData.swift */,
+				465E28D0245A26A100BFFED2 /* GameDetails.swift */,
+			);
+			path = JSONStructures;
+			sourceTree = "<group>";
+		};
+		46812DB7244F562A00BB0DA8 = {
+			isa = PBXGroup;
+			children = (
+				46812DC2244F562A00BB0DA8 /* SwitchHero */,
+				46812DDB244F562E00BB0DA8 /* SwitchHeroTests */,
+				46812DE6244F562F00BB0DA8 /* SwitchHeroUITests */,
+				46812DC1244F562A00BB0DA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46812DC1244F562A00BB0DA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46812DC0244F562A00BB0DA8 /* SwitchHero.app */,
+				46812DD8244F562E00BB0DA8 /* SwitchHeroTests.xctest */,
+				46812DE3244F562E00BB0DA8 /* SwitchHeroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46812DC2244F562A00BB0DA8 /* SwitchHero */ = {
+			isa = PBXGroup;
+			children = (
+				46812E092451FAB100BB0DA8 /* Configurations */,
+				46A2C23424858C04004E7656 /* Extensions */,
+				465E28CF245A24F700BFFED2 /* JSONStructures */,
+				46812E012450D06A00BB0DA8 /* Objects */,
+				46ADA60E24EF113800E4C18C /* TabBar */,
+				46812E022450D07200BB0DA8 /* GamesViewControllers */,
+				46A7C691247344040025CB00 /* FavoritesViewControllers */,
+				46A7C6922473441C0025CB00 /* GameDetailsViewController */,
+				46A7C68C2469EFCF0025CB00 /* SettingsControllers */,
+				46812DC3244F562A00BB0DA8 /* AppDelegate.swift */,
+				46812DC5244F562A00BB0DA8 /* SceneDelegate.swift */,
+				46812DCB244F562A00BB0DA8 /* Main.storyboard */,
+				46812DCE244F562E00BB0DA8 /* Assets.xcassets */,
+				46812DD0244F562E00BB0DA8 /* LaunchScreen.storyboard */,
+				46812DD3244F562E00BB0DA8 /* Info.plist */,
+			);
+			path = SwitchHero;
+			sourceTree = "<group>";
+		};
+		46812DDB244F562E00BB0DA8 /* SwitchHeroTests */ = {
+			isa = PBXGroup;
+			children = (
+				46812DDC244F562E00BB0DA8 /* SwitchHeroTests.swift */,
+				46812DDE244F562E00BB0DA8 /* Info.plist */,
+			);
+			path = SwitchHeroTests;
+			sourceTree = "<group>";
+		};
+		46812DE6244F562F00BB0DA8 /* SwitchHeroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46812DE7244F562F00BB0DA8 /* SwitchHeroUITests.swift */,
+				46812DE9244F562F00BB0DA8 /* Info.plist */,
+			);
+			path = SwitchHeroUITests;
+			sourceTree = "<group>";
+		};
+		46812E012450D06A00BB0DA8 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				46F24A8C24E32C5E00979896 /* LocalNotificationManager.swift */,
+				46812DFF2450D04000BB0DA8 /* Game.swift */,
+				465E28CD245A19F200BFFED2 /* GameManager.swift */,
+				46A748C1247EF6DC00AFA209 /* GameFilters.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		46812E022450D07200BB0DA8 /* GamesViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				465E28C124538B7100BFFED2 /* GamesTableViewController.swift */,
+				465E28C324561CD200BFFED2 /* GamesTableViewCell.swift */,
+			);
+			path = GamesViewControllers;
+			sourceTree = "<group>";
+		};
+		46812E092451FAB100BB0DA8 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				46812E072451FA9100BB0DA8 /* Config.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		46A2C23424858C04004E7656 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				465E28BF24537AFB00BFFED2 /* ReflectedStringConvertible.swift */,
+				465E28D42463560B00BFFED2 /* RoundButton.swift */,
+				46A2C23524858C40004E7656 /* UIAlert.swift */,
+				46A2C23724858C72004E7656 /* UILabel.swift */,
+				467C77402489847500153C79 /* Date.swift */,
+				467C7742248AB3E400153C79 /* Array.swift */,
+				46C20E2E24C7A19200E329DA /* UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		46A7C68C2469EFCF0025CB00 /* SettingsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				46A7C68A2469E1530025CB00 /* SettingsTableViewController.swift */,
+				46ADA61524F98B0D00E4C18C /* Notifications */,
+				46518746258D79CC00DA57C1 /* System */,
+				46ADA61624F99DBA00E4C18C /* Appearance */,
+				4651873D258D6F6500DA57C1 /* About Section */,
+			);
+			path = SettingsControllers;
+			sourceTree = "<group>";
+		};
+		46A7C691247344040025CB00 /* FavoritesViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				465E28CB245A08CA00BFFED2 /* FavoritesTableViewController.swift */,
+				46ADA61124F59B9A00E4C18C /* FavoritesTableViewCell.swift */,
+			);
+			path = FavoritesViewControllers;
+			sourceTree = "<group>";
+		};
+		46A7C6922473441C0025CB00 /* GameDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46812DF7244F5F0C00BB0DA8 /* GameDetailsViewController.swift */,
+				46A7C68F247343E80025CB00 /* GameDetailsTableViewController.swift */,
+			);
+			path = GameDetailsViewController;
+			sourceTree = "<group>";
+		};
+		46ADA60E24EF113800E4C18C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				46ADA60C24EF072100E4C18C /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		46ADA61524F98B0D00E4C18C /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				46A7C68D2469F0490025CB00 /* NotificationsSettingsTableViewController.swift */,
+				46ADA61324F702C400E4C18C /* LocalNotificationsCell.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		46ADA61624F99DBA00E4C18C /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				46ADA61724F9AFC100E4C18C /* AppearanceTableViewController.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46812DBF244F562A00BB0DA8 /* SwitchHero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46812DEC244F562F00BB0DA8 /* Build configuration list for PBXNativeTarget "SwitchHero" */;
+			buildPhases = (
+				46812DBC244F562A00BB0DA8 /* Sources */,
+				46812DBD244F562A00BB0DA8 /* Frameworks */,
+				46812DBE244F562A00BB0DA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwitchHero;
+			packageProductDependencies = (
+				46A7C694247863520025CB00 /* Kingfisher */,
+				46A748BF247ECE0C00AFA209 /* Sheeeeeeeeet */,
+				467C774524942BF400153C79 /* Alamofire */,
+			);
+			productName = SwitchHero;
+			productReference = 46812DC0244F562A00BB0DA8 /* SwitchHero.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46812DD7244F562E00BB0DA8 /* SwitchHeroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46812DEF244F562F00BB0DA8 /* Build configuration list for PBXNativeTarget "SwitchHeroTests" */;
+			buildPhases = (
+				46812DD4244F562E00BB0DA8 /* Sources */,
+				46812DD5244F562E00BB0DA8 /* Frameworks */,
+				46812DD6244F562E00BB0DA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46812DDA244F562E00BB0DA8 /* PBXTargetDependency */,
+			);
+			name = SwitchHeroTests;
+			productName = SwitchHeroTests;
+			productReference = 46812DD8244F562E00BB0DA8 /* SwitchHeroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46812DE2244F562E00BB0DA8 /* SwitchHeroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46812DF2244F562F00BB0DA8 /* Build configuration list for PBXNativeTarget "SwitchHeroUITests" */;
+			buildPhases = (
+				46812DDF244F562E00BB0DA8 /* Sources */,
+				46812DE0244F562E00BB0DA8 /* Frameworks */,
+				46812DE1244F562E00BB0DA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46812DE5244F562E00BB0DA8 /* PBXTargetDependency */,
+			);
+			name = SwitchHeroUITests;
+			productName = SwitchHeroUITests;
+			productReference = 46812DE3244F562E00BB0DA8 /* SwitchHeroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46812DB8244F562A00BB0DA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Bryan Van Zile";
+				TargetAttributes = {
+					46812DBF244F562A00BB0DA8 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					46812DD7244F562E00BB0DA8 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 46812DBF244F562A00BB0DA8;
+					};
+					46812DE2244F562E00BB0DA8 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 46812DBF244F562A00BB0DA8;
+					};
+				};
+			};
+			buildConfigurationList = 46812DBB244F562A00BB0DA8 /* Build configuration list for PBXProject "SwitchHero" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46812DB7244F562A00BB0DA8;
+			packageReferences = (
+				46A7C693247863510025CB00 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				46A748BE247ECE0C00AFA209 /* XCRemoteSwiftPackageReference "Sheeeeeeeeet" */,
+				467C774424942BF400153C79 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 46812DC1244F562A00BB0DA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46812DBF244F562A00BB0DA8 /* SwitchHero */,
+				46812DD7244F562E00BB0DA8 /* SwitchHeroTests */,
+				46812DE2244F562E00BB0DA8 /* SwitchHeroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46812DBE244F562A00BB0DA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46812DD2244F562E00BB0DA8 /* LaunchScreen.storyboard in Resources */,
+				46812DCF244F562E00BB0DA8 /* Assets.xcassets in Resources */,
+				46812DCD244F562A00BB0DA8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46812DD6244F562E00BB0DA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46812DE1244F562E00BB0DA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46812DBC244F562A00BB0DA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46812DF8244F5F0C00BB0DA8 /* GameDetailsViewController.swift in Sources */,
+				46ADA61224F59B9A00E4C18C /* FavoritesTableViewCell.swift in Sources */,
+				46812E002450D04000BB0DA8 /* Game.swift in Sources */,
+				46812E082451FA9100BB0DA8 /* Config.swift in Sources */,
+				465E28C424561CD200BFFED2 /* GamesTableViewCell.swift in Sources */,
+				465E28D1245A26A100BFFED2 /* GameDetails.swift in Sources */,
+				46518742258D78B000DA57C1 /* AboutTableViewController.swift in Sources */,
+				467C7743248AB3E400153C79 /* Array.swift in Sources */,
+				46A7C690247343E80025CB00 /* GameDetailsTableViewController.swift in Sources */,
+				46F24A8D24E32C5E00979896 /* LocalNotificationManager.swift in Sources */,
+				465E28D52463560B00BFFED2 /* RoundButton.swift in Sources */,
+				46ADA60D24EF072100E4C18C /* TabBarViewController.swift in Sources */,
+				46C20E2F24C7A19200E329DA /* UIImage.swift in Sources */,
+				46812DC4244F562A00BB0DA8 /* AppDelegate.swift in Sources */,
+				465E28C024537AFB00BFFED2 /* ReflectedStringConvertible.swift in Sources */,
+				46A2C23624858C40004E7656 /* UIAlert.swift in Sources */,
+				465E28CC245A08CA00BFFED2 /* FavoritesTableViewController.swift in Sources */,
+				46A748BD247C5F6100AFA209 /* SystemSettingsTableViewController.swift in Sources */,
+				465E28C224538B7100BFFED2 /* GamesTableViewController.swift in Sources */,
+				46A748C2247EF6DC00AFA209 /* GameFilters.swift in Sources */,
+				46A7C68E2469F0490025CB00 /* NotificationsSettingsTableViewController.swift in Sources */,
+				46A2C23824858C72004E7656 /* UILabel.swift in Sources */,
+				46A7C68B2469E1530025CB00 /* SettingsTableViewController.swift in Sources */,
+				46812DC6244F562A00BB0DA8 /* SceneDelegate.swift in Sources */,
+				467C77412489847500153C79 /* Date.swift in Sources */,
+				46812E062450D74500BB0DA8 /* DynamoGameData.swift in Sources */,
+				465E28CE245A19F200BFFED2 /* GameManager.swift in Sources */,
+				46ADA61824F9AFC100E4C18C /* AppearanceTableViewController.swift in Sources */,
+				46ADA61424F702C400E4C18C /* LocalNotificationsCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46812DD4244F562E00BB0DA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46812DDD244F562E00BB0DA8 /* SwitchHeroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46812DDF244F562E00BB0DA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46812DE8244F562F00BB0DA8 /* SwitchHeroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46812DDA244F562E00BB0DA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46812DBF244F562A00BB0DA8 /* SwitchHero */;
+			targetProxy = 46812DD9244F562E00BB0DA8 /* PBXContainerItemProxy */;
+		};
+		46812DE5244F562E00BB0DA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46812DBF244F562A00BB0DA8 /* SwitchHero */;
+			targetProxy = 46812DE4244F562E00BB0DA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46812DCB244F562A00BB0DA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46812DCC244F562A00BB0DA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46812DD0244F562E00BB0DA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46812DD1244F562E00BB0DA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46812DEA244F562F00BB0DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46812DEB244F562F00BB0DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46812DED244F562F00BB0DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PA88EB3BFL;
+				INFOPLIST_FILE = SwitchHero/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bvz.SwitchHero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46812DEE244F562F00BB0DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PA88EB3BFL;
+				INFOPLIST_FILE = SwitchHero/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bvz.SwitchHero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46812DF0244F562F00BB0DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PA88EB3BFL;
+				INFOPLIST_FILE = SwitchHeroTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bvz.SwitchHeroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitchHero.app/SwitchHero";
+			};
+			name = Debug;
+		};
+		46812DF1244F562F00BB0DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PA88EB3BFL;
+				INFOPLIST_FILE = SwitchHeroTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bvz.SwitchHeroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitchHero.app/SwitchHero";
+			};
+			name = Release;
+		};
+		46812DF3244F562F00BB0DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PA88EB3BFL;
+				INFOPLIST_FILE = SwitchHeroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bvz.SwitchHeroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwitchHero;
+			};
+			name = Debug;
+		};
+		46812DF4244F562F00BB0DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PA88EB3BFL;
+				INFOPLIST_FILE = SwitchHeroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bvz.SwitchHeroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwitchHero;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46812DBB244F562A00BB0DA8 /* Build configuration list for PBXProject "SwitchHero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46812DEA244F562F00BB0DA8 /* Debug */,
+				46812DEB244F562F00BB0DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46812DEC244F562F00BB0DA8 /* Build configuration list for PBXNativeTarget "SwitchHero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46812DED244F562F00BB0DA8 /* Debug */,
+				46812DEE244F562F00BB0DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46812DEF244F562F00BB0DA8 /* Build configuration list for PBXNativeTarget "SwitchHeroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46812DF0244F562F00BB0DA8 /* Debug */,
+				46812DF1244F562F00BB0DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46812DF2244F562F00BB0DA8 /* Build configuration list for PBXNativeTarget "SwitchHeroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46812DF3244F562F00BB0DA8 /* Debug */,
+				46812DF4244F562F00BB0DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		467C774424942BF400153C79 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
+		46A748BE247ECE0C00AFA209 /* XCRemoteSwiftPackageReference "Sheeeeeeeeet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielsaidi/Sheeeeeeeeet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+		46A7C693247863510025CB00 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		467C774524942BF400153C79 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 467C774424942BF400153C79 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		46A748BF247ECE0C00AFA209 /* Sheeeeeeeeet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46A748BE247ECE0C00AFA209 /* XCRemoteSwiftPackageReference "Sheeeeeeeeet" */;
+			productName = Sheeeeeeeeet;
+		};
+		46A7C694247863520025CB00 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46A7C693247863510025CB00 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 46812DB8244F562A00BB0DA8 /* Project object */;
+}
